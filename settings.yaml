@@ -1,0 +1,8 @@
+homepage:
+  default: latest
+  type: enum
+  choices:
+    - categories
+    - new
+    - unread
+    - top
