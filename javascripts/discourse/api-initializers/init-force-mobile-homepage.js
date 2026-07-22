@@ -2,9 +2,9 @@ import { apiInitializer } from 'discourse/lib/api'
 import { setDefaultHomepage } from 'discourse/lib/utilities'
 
 export default apiInitializer(api => {
-  const site = api.container.lookup('service:site')
+  const capabilities = api.container.lookup('service:capabilities')
 
-  if (site.mobileView) {
+  if (capabilities.isMobileDevice) {
     setDefaultHomepage(settings.homepage)
   }
 })
