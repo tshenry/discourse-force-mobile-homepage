@@ -2,7 +2,8 @@ homepage:
   default: latest
   type: enum
   choices:
-    - categories
+    - latest
     - new
-    - unread
     - top
+    - categories
+    - hot

@@ -1,0 +1,8 @@
+@use 'lib/viewport';
+
+// Hide homepage user setting to avoid confusion
+@include viewport.until(sm) {
+  .user-preferences .control-group.home {
+    display: none;
+  }
+}
