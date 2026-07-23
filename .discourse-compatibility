@@ -1,0 +1,4 @@
+# Discourse < 2026.3.0 still supports the old inline `text/discourse-plugin`
+# script, and predates `capabilities.isMobileDevice`. Serve those sites the
+# last commit of the original implementation.
+"< 2026.3.0": ad14f52
